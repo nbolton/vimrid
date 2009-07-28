@@ -1,0 +1,113 @@
+{
+   1
+   Memcheck:Cond
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   fun:_nv000133gl
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   fun:glXCreateNewContext
+   fun:fgOpenWindow
+   fun:fgCreateWindow
+   fun:glutCreateWindow
+   fun:_ZN6vimrid4glut15GlutApplication4InitEv
+}
+{
+   2
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/tls/libnvidia-tls.so.180.44
+   fun:fgHintPresent
+   fun:glutInit
+   fun:_ZN6vimrid4glut15GlutApplication3RunEv
+   fun:_ZN6vimrid8Launcher7runDemoERNS_14VimridSettingsE
+   fun:_ZN6vimrid8Launcher6LaunchEiPPc
+   fun:main
+}
+{
+   3
+   Memcheck:Leak
+   fun:calloc
+   fun:_dl_allocate_tls
+   fun:pthread_create@@GLIBC_2.2.5
+   fun:_ZN6vimrid5dicom14DicomTcpClient13DownloadAsyncERKSs
+   fun:_ZN6vimrid5demos11filterdemos11FilterDemo34InitEv
+   fun:_ZN6vimrid4glut15GlutApplication3RunEv
+   fun:_ZN6vimrid8Launcher7runDemoERNS_14VimridSettingsE
+   fun:_ZN6vimrid8Launcher6LaunchEiPPc
+   fun:main
+}
+{
+   4
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib64/libGL.so.180.44
+   fun:glXQueryExtension
+   fun:glutInit
+   fun:_ZN6vimrid4glut15GlutApplication3RunEv
+   fun:_ZN6vimrid8Launcher7runDemoERNS_14VimridSettingsE
+   fun:_ZN6vimrid8Launcher6LaunchEiPPc
+   fun:main
+}
+{
+   5
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   fun:_nv000102gl
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+}
+{
+   6
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGLcore.so.180.44
+   fun:_nv000102gl
+   obj:/usr/lib64/libGLcore.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   obj:/usr/lib64/libGL.so.180.44
+   fun:fgOpenWindow
+   fun:fgCreateWindow
+}
+{
+   7
+   Memcheck:Leak
+   fun:malloc
+   obj:/usr/lib64/libGL.so.180.44
+   fun:glXCreateNewContext
+   fun:fgOpenWindow
+   fun:fgCreateWindow
+   fun:glutCreateWindow
+   fun:_ZN6vimrid4glut15GlutApplication4InitEv
+   fun:_ZN6vimrid5demos11filterdemos11FilterDemo34InitEv
+   fun:_ZN6vimrid4glut15GlutApplication3RunEv
+   fun:_ZN6vimrid8Launcher7runDemoERNS_14VimridSettingsE
+   fun:_ZN6vimrid8Launcher6LaunchEiPPc
+   fun:main
+}
+{
+   8
+   Memcheck:Leak
+   fun:_Znwm
+   fun:_ZNSs4_Rep9_S_createEmmRKSaIcE
+   fun:_ZNSs9_M_mutateEmmm
+   fun:_ZNSs15_M_replace_safeEmmPKcm
+   fun:_ZN6vimrid14VimridSettings15ProcessMainArgsEiPPc
+   fun:_ZN6vimrid8Launcher6LaunchEiPPc
+   fun:main
+}

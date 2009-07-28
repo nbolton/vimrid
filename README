@@ -1,0 +1,16 @@
+ViMRID project folder readme
+
+Compiling
+---------
+To compile each application, simply run the GNU make command (this may not be installed by default).
+
+Eclipse
+-------
+Eclipse command to remove obsolete includes on other platforms:
+# rm -r .metadata/.plugins/org.eclipse.cdt.make.core
+
+64-Bit
+------
+Compiling 32-bit imebra library dependant projects on a 64-bit system:
+ 1. Ensure that -m32 is being used for compiler and linker (on projects depending on imebra - e.g. vimrid, dicom2jpeg, etc).
+ 2. [openSUSE] Ensure that 32-bit versions of these packages are installed, as wellas the default 64-bit ones: libstdc++, libstdc++43-devel, gcc43, gcc43-devel, freeglut, freeglut-devel, SDL, SDL-devel, mesa-devel
